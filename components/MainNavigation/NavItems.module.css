@@ -1,0 +1,29 @@
+.nav-list {
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    align-items: flex-end;
+}
+
+.nav-list a {
+    margin: 0 2rem;
+    color: #11052C;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+    text-decoration-color: #FFDEDE;
+    text-decoration-style: solid;
+    text-decoration-thickness: .4rem;
+    text-underline-offset: .4rem;
+}
+
+.nav-list a.active {
+    text-decoration: underline;
+    text-decoration-color: #FFDEDE;
+    text-decoration-style: solid;
+    text-decoration-thickness: .4rem;
+    text-underline-offset: .4rem;
+}
