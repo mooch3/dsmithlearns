@@ -18,6 +18,16 @@ export default function Home() {
         <ProjTitle title="Dear Juna" />
         <Image image="/DearJuna.png" />
       </Tile>
+      <Tile project="website">
+        <Category category="personal site" />
+        <ProjTitle title="Personal Site"/>
+        <Image image="WebDesign.png" />
+      </Tile>
+      <Tile project="code notebook">
+        <Category category="application" />
+        <ProjTitle title="Code Notebook" />
+        <Image image="CodeNotebook.png" />
+      </Tile>
     </>
   );
 }
