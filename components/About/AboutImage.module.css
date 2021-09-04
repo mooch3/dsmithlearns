@@ -1,0 +1,16 @@
+.image-container {
+    flex: 45%;
+    margin: 3rem 4rem;
+}
+
+.image-container img {
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 52px 74px rgb(0 21 64 / 40%);
+}
+
+@media screen and (max-width: 900px) {
+    .image-container {
+        flex: 100%;
+    }    
+}

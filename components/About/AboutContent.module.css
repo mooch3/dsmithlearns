@@ -1,0 +1,15 @@
+.about-content {
+    line-height: 1.6;
+    text-align: left;
+    flex: 40%;
+}
+
+.about-content p {
+    color: #868585;
+}
+
+@media screen and (max-width: 900px) {
+    .about-content {
+        flex: 100%;
+    }    
+}
