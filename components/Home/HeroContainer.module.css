@@ -1,7 +1,13 @@
 .hero-c {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    margin: 5rem auto;
+    margin: 3rem auto;
+    align-items: center;
 
+}
+
+.hero-section {
+    padding-top: 95px;
+    position: relative;
+    width: 100%;
 }

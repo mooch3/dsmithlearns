@@ -1,0 +1,23 @@
+.circle {
+    height: 300px;
+    width: 300px;
+    max-width: 300px;
+    border-radius: 100%;
+    flex: 1 1 auto;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle h1 {
+    text-transform: lowercase;
+    letter-spacing: .3rem;
+}
+
+.circle img {
+    object-fit: fill;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+}
