@@ -13,17 +13,17 @@ export default function Home() {
         <ProjTitle title="Chuggr" />
         <Image image="/CHUGGRLogo.png"/>
       </Tile>
-      <Tile project="blog">
+      <Tile project="dear-juna">
         <Category category="blog" />
         <ProjTitle title="Dear Juna" />
         <Image image="/DearJuna.png" />
       </Tile>
-      <Tile project="website">
-        <Category category="personal site" />
+      <Tile project="personal-site">
+        <Category category="personal-site" />
         <ProjTitle title="Personal Site"/>
         <Image image="WebDesign.png" />
       </Tile>
-      <Tile project="code notebook">
+      <Tile project="code-notebook">
         <Category category="application" />
         <ProjTitle title="Code Notebook" />
         <Image image="CodeNotebook.png" />

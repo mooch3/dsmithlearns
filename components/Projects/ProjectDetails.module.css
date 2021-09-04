@@ -1,0 +1,79 @@
+.hero-section {
+  width: 100vw;
+  padding: 10rem 5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8em;
+}
+
+.hero-section.chuggr {
+  background: linear-gradient(340deg, #e298447c, #3232bea2);
+}
+
+.hero-section.dear-juna {
+  background-image: linear-gradient(
+    to right,
+    rgba(184, 185, 252, 0.2) 0%,
+    rgba(137, 108, 218, 0.2) 51%,
+    rgba(210, 94, 221, 0.2) 100%
+  );
+}
+.hero-section h2 {
+  margin: 0.25rem;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.hero-section h1 {
+  letter-spacing: 0.3rem;
+  font-size: 3rem;
+}
+.chuggr .code-notebook h2 {
+  color: #fff;
+}
+
+.chuggr .code-notebook h1 {
+  color: #fff;
+}
+
+.chuggr img {
+  width: 20%;
+  align-self: center;
+}
+
+.dear-juna img {
+  width: 50%;
+  align-self: center;
+  border-radius: 20px;
+}
+
+.personal-site {
+    background-image: linear-gradient(
+        to right,
+        rgba(64, 100, 31, 0.664) 0%,
+        rgba(36, 124, 43, 0.2) 51%,
+        rgba(40, 92, 48, 0.2) 100%
+      );
+}
+
+.blocks {
+  width: 80%;
+  line-height: 2;
+  padding: 5em;
+}
+
+.hero-section.code-notebook {
+    background-image: linear-gradient(
+        to right,
+        rgba(100, 31, 31, 0.664) 0%,
+        rgba(124, 36, 36, 0.2) 51%,
+        rgba(92, 40, 40, 0.664) 100%
+      );
+}
+
+.code-notebook img {
+    border-radius: 20px;
+    width: 60%;
+    align-self: center;
+}

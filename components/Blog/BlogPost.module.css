@@ -5,10 +5,14 @@
 
 .content {
     line-height: 2.0;
-    width: 100%;
+    width: 50%;
+    align-self: center;
+    text-align: justify;
+    margin-bottom: 5em;
 }
 
 .info img {
     width: 40%;
     margin: 3rem;
+    border-radius: 20px;
 }
