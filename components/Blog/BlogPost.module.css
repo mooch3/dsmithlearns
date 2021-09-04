@@ -1,0 +1,14 @@
+.info {
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.content {
+    line-height: 2.0;
+    width: 100%;
+}
+
+.info img {
+    width: 40%;
+    margin: 3rem;
+}

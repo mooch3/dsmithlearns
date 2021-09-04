@@ -4,7 +4,7 @@ import sanityClient from '../../src/sanityClient';
 const Learning = ({ data }) => {
   return (
   <Pagination 
-      pageLimit={5}
+      pageLimit={Math.ceil(data.length / 5)}
       dataLimit={5}
       data={data}
   />);
@@ -28,7 +28,7 @@ export const getStaticProps = async () => {
             }
         }`
     );
-    console.log(data[0].publishedAt)
+
     return {
         props: {
             data

@@ -4,7 +4,7 @@ import CardContent from "./CardContent";
 import classes from "./Pagination.module.css";
 
 const Pagination = ({ data, pageLimit, dataLimit }) => {
-  const [pages] = useState(Math.round(data.length / dataLimit));
+  const [pages] = useState(Math.ceil(data.length / dataLimit));
   const [currentPage, setCurrentPage] = useState(1);
 
   const goToNextPage = () => {
@@ -34,10 +34,12 @@ const Pagination = ({ data, pageLimit, dataLimit }) => {
 
   return (
     <div className={classes.posts}>
-      <h1>Learning and Stuff</h1>
-      <p>A look into what I am learning about, my thoughts, and daily life.</p>
-      {getPaginatedData().map((data, index) => (
-        <Card key={data.slug.current}>
+      <h1 className={classes.title}>Learning & Stuff</h1>
+      <p className={classes.subheader}>
+        A look into what I am learning about, my thoughts, and daily life.
+      </p>
+      {getPaginatedData().map((data) => (
+        <Card key={data.slug.current} id={data.slug.current}>
           <CardContent
             title={data.title}
             date={data.publishedAt}
