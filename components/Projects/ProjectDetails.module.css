@@ -78,6 +78,10 @@
     align-self: center;
 }
 
+.personal-site img {
+  width: 80%;
+}
+
 @media screen and (max-width: 500px) {
   .blocks {
     width: 100%;
