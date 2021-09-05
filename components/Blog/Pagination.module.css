@@ -7,6 +7,7 @@
 
 .title {
     font-size: 4rem;
+    text-align: center;
 }
 
 .subheader {
@@ -63,4 +64,10 @@
     pointer-events: none;
     box-shadow: none;
     color: #999;
+  }
+
+  @media screen and (max-width: 500px) {
+    .subheader {
+      max-width: 80%;
+    }
   }

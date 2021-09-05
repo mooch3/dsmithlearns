@@ -1,8 +1,25 @@
 import sanityClient from "../../../src/sanityClient";
 import BlogPost from "../../../components/Blog/BlogPost";
+import Head from 'next/head';
 
 const Slug = ({ post }) => {
-  return <BlogPost post={post} />;
+  return (
+    <>
+      <Head>
+        <title>{post.title}</title>
+        <meta
+          name="description"
+          content={post.title + "-" + post.category}
+        />
+        <meta
+          name="og:title"
+          content={"Derek Smith" + " Blog Post: " + post.title}
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <BlogPost post={post} />
+    </>
+  );
 };
 
 export const getStaticPaths = async () => {

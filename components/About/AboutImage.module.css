@@ -12,5 +12,8 @@
 @media screen and (max-width: 900px) {
     .image-container {
         flex: 100%;
-    }    
+    }
+    .image-container img {
+        width: 100%;
+    }
 }

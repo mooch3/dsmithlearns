@@ -9,7 +9,7 @@ const NavItems = () => {
     <ul className={classes["nav-list"]}>
       <li>
         <Link href="/">
-          <a className={router.pathname === "/" ? classes.active : ""}>Home</a>
+          <a className={router.pathname === "/" ? classes.active : ""}>Work</a>
         </Link>
       </li>
       <li>

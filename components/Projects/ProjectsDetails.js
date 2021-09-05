@@ -5,20 +5,21 @@ import sanityClient from "../../src/sanityClient";
 const ProjectDetails = ({ project }) => {
   let selectedClasses;
 
-  if (project.slug.current === "chuggr") {
-    selectedClasses = classes.chuggr;
-  }
-
-  if (project.slug.current === "dear-juna") {
-    selectedClasses = classes["dear-juna"];
-  }
-
-  if (project.slug.current === "personal-site") {
-    selectedClasses = classes["personal-site"];
-  }
-
-  if (project.slug.current === 'code-notebook') {
-      selectedClasses = classes['code-notebook']
+  switch (project.slug.current) {
+    case "chuggr":
+      selectedClasses = classes.chuggr;
+      break;
+    case "dear-juna":
+      selectedClasses = classes["dear-juna"];
+      break;
+    case "personal-site":
+      selectedClasses = classes["personal-site"];
+      break;
+    case "code-notebook":
+      selectedClasses = classes["code-notebook"];
+      break;
+    default:
+      break;
   }
 
   return (

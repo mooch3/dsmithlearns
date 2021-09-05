@@ -77,3 +77,11 @@
     width: 60%;
     align-self: center;
 }
+
+@media screen and (max-width: 500px) {
+  .blocks {
+    width: 100%;
+    text-align: left;
+    padding: 2em;
+  }
+}

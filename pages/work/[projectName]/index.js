@@ -1,8 +1,18 @@
 import sanityClient from "../../../src/sanityClient";
 import ProjectDetails from "../../../components/Projects/ProjectsDetails";
+import Head from 'next/head';
 
 const ProjectName = ({ project }) => {
-  return <ProjectDetails project={project} />;
+  return (
+  <>
+      <Head>
+      <title>{project.title}</title>
+      <meta name="description" content={project.title + ' ' + project.role} />
+      <meta name="og:title" content={"Derek Smith" + ' created ' + project.title} />
+      <link rel="icon" href="/favicon.ico"/>
+    </Head>
+  <ProjectDetails project={project} />
+  </>);
 };
 
 export const getStaticPaths = async () => {
@@ -54,7 +64,7 @@ export const getStaticProps = async (context) => {
   }
 
   const project = getProject.shift();
-  console.log(project)
+
   return {
     props: {
       project,
