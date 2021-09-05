@@ -28,7 +28,7 @@ const ProjectDetails = ({ project }) => {
         <h1>{project.title}</h1>
         <h2>{project.name}</h2>
         <h2>{project.role}</h2>
-        <img src={project.mainImage.asset.url} />
+        <img src={project.mainImage.asset.url} alt={`Image of ${project.title} project`} />
       </div>
 
       <section className={classes.blocks}>

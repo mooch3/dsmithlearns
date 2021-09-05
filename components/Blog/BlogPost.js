@@ -1,6 +1,6 @@
 import BlockContent from "@sanity/block-content-to-react";
 import sanityClient from "../../src/sanityClient";
-import classes from './BlogPost.module.css';
+import classes from "./BlogPost.module.css";
 import dateFormat from "../../lib/dateFormat";
 
 const BlogPost = ({ post }) => {
@@ -10,7 +10,10 @@ const BlogPost = ({ post }) => {
         <h1>{post.title}</h1>
         <h3>{dateFormat(post.publishedAt)}</h3>
         <h3>{post.category}</h3>
-        <img src={post.mainImage.asset.url} />
+        <img
+          src={post.mainImage.asset.url}
+          alt={`Image for ${post.title} blog post`}
+        />
       </div>
       <div className={classes.content}>
         <BlockContent

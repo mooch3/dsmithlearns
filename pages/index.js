@@ -28,12 +28,12 @@ export default function Home() {
       <Tile project="code-notebook">
         <Category category="application" />
         <ProjTitle title="Code Notebook" />
-        <Image image="CodeNotebook.png" />
+        <Image image="/CodeNotebook.png" />
       </Tile>
       <Tile project="personal-site">
         <Category category="personal-site" />
         <ProjTitle title="Personal Site" />
-        <Image image="WebDesign.png" />
+        <Image image="/WebDesign.png" />
       </Tile>
     </>
   );

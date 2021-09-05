@@ -3,7 +3,7 @@ import classes from "./AboutContent.module.css";
 const AboutContent = () => {
   return (
     <div className={classes["about-content"]}>
-      <h1>I'm Derek, a software engineer and music educator in Tacoma, WA.</h1>
+      <h1>I&apos;m Derek, a software engineer and music educator in Tacoma, WA.</h1>
       <p>
         I spent my whole life dreaming of being a band director. I love music
         and music education! But, when I started programming, I found a new
@@ -20,7 +20,7 @@ const AboutContent = () => {
       <p>
         Outside of working as a full time teacher and web developer, I like to
         hike, ski, practice my saxophone, and hang with my family. If I have
-        time to myself you'll find me facepalming while watching the Mariners or
+        time to myself you&apos;ll find me facepalming while watching the Mariners or
         golfing.
       </p>
     </div>
